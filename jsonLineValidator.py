@@ -25,6 +25,6 @@ for file in filenames:
 # write a file with all the bad file info 
 with codecs.open('bad_lines.txt', 'a', encoding='utf-8', errors='replace') as sf:
     for i in badLines:
-        sf.write(i[0]+' line 'str(+i[1]))
+        sf.write(i[0]+' line 'str(+i[1])+'\n')
 
 print('Done!')
